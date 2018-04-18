@@ -1,0 +1,67 @@
+.carousel {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+.carousel__image {
+    width: 45%;
+    padding-right: 50px;
+    position: relative;
+}
+
+.carousel__button {
+    position: absolute; 
+    transform: translate(-50%);
+    border-radius: 50%;
+    border: none;
+    top: 50%;
+    background-color: grey;
+    color: white;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.carousel__button:hover {
+    background-color: orangered;
+}
+
+.carousel__button--left {
+    left: 20px;
+}
+.carousel__button--right {
+    right: 20px;
+}
+
+.dots {
+    display: flex;
+    position: absolute;
+    top: 90%;
+    transform: translate(-50%);
+}
+
+.dots__bts {
+    border-radius: 50%;
+    background-color: grey;
+    border: solid black 3px;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+}
+
+.dots__bts.is-active {
+    background-color: orangered;
+}
+
+
+
+.dots__bts--left {
+    margin-right: 20px;
+}
+
+.dots__bts--right {
+    margin-left: 20px;
+}
